@@ -22,6 +22,8 @@ body {
     transition: 1.25s ease;
     padding: 10px;
     border-radius: 50px;
+    position: relative;
+    top: 150px;
 }
 
 
@@ -31,7 +33,7 @@ p {
     margin: 10px auto 0;
     opacity: 0;
     transition:0.6s ease;
-    transform: translate(-200px);
+    transform: translate(-50px);
 }
 
 .question-click { 
@@ -44,6 +46,8 @@ p {
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
+    
+
 }
 
 .mouseMove { 
@@ -54,5 +58,25 @@ p {
     position: absolute;
     transform: translate(-50%, -50%);
     transition: 0.2s ease ;
-    
+    z-index: -1;
 }
+
+nav {
+    background: pink;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: -50px;
+
+    ul { 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    };  
+}; 
+
+
+form , input , select  { 
+    color: #000;
+}
+
