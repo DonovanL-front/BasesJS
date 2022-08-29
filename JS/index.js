@@ -37,9 +37,9 @@ let y = 4
 /* Supérioritéé */
 
 if(x > y ) {
-     console.log('Supérieur')
+     console.log('Supérieur');
 } else { 
-    console.log('Inférieur')
+    console.log('Inférieur');
 }
 
 /* Egalité parfaite , ou || */
@@ -50,7 +50,7 @@ if (x === y || x > 3 ) {
     console.log('false');
 }
 
-/* Egalité parfaite , et  */
+/* Egalité parfaite , et && */
 
 
 if (x === y && x > 3 ) { 
@@ -59,7 +59,53 @@ if (x === y && x > 3 ) {
     console.log('false');
 }
 
+/* IF */
 
 if (x) { 
-    console.log('Exist')
+    console.log('Exist');
 }
+
+
+/* Les fonctions */
+
+
+function faireQCHS() { 
+    console.log("Coucou");
+}
+
+faireQCHS();
+
+/* Fonction fléchée */
+
+const faireUneTache = (tache) =>{ 
+    console.log("Je fais: \n" + tache );
+}
+
+faireUneTache(" Les courses")
+
+/* Doit être appelée en console */
+
+function calc(x , y) { 
+    return x * y; 
+} 
+
+calc(4, 9);
+
+
+/* Fonction qui s'appelle toute seule (anonyme)*/
+
+(function myFunction() { 
+    console.log('Je me joue toute seule');
+}());
+
+
+(() => { 
+    console.log('Je me joue toute seule ');
+})();
+
+
+function add2(a) { 
+    console.log(a + 2) 
+}
+
+add2(2);
